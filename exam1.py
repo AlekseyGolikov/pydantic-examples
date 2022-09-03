@@ -23,6 +23,17 @@ input_data = {
 
 
 if __name__ == '__main__':
-    user = User(**input_data)
-    print(user)
-    print(user.address['city'])
+    # user = User(**input_data)
+    # print(user)
+    # print(user.address['city'])
+
+    out_data = User(
+        name='Ivan',
+        birth='12.12.2000',
+        age=21,
+        address={
+            'street': 'Kalinina',
+            'house': 99
+        }
+    )
+    print(out_data.json())
